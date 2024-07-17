@@ -1,0 +1,76 @@
+<style>
+    *, :before, :after {
+	 box-sizing: border-box;
+}
+ .wrapper1 {
+	 flex-grow: 2;
+	 width: 40vw;
+	 max-width: 500px;
+	 margin: 0 auto;
+}
+ h1 {
+	 margin: 0;
+	 font-size: 6em;
+	 font-weight: 100;
+}
+ p {
+	 width: 95%;
+	 font-size: 1.5em;
+	 line-height: 1.4;
+}
+ .buttons1 {
+	 white-space: nowrap;
+	 display: inline-block;
+}
+ span {
+	 display: block;
+	 text-transform: uppercase;
+	 color: #b9ddfb;
+	 letter-spacing: 1.5px;
+	 text-align: center;
+}
+ .a {
+	 display: inline-block;
+	 padding: 0.8em 1em;
+	 margin-right: 1em;
+	 margin-bottom: 1em;
+	 border: 3px solid #b9ddfb;
+	 color: #138ff2;
+	 font-weight: 500;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 letter-spacing: 0.2em;
+	 position: relative;
+	 overflow: hidden;
+	 transition: 0.3s;
+}
+ .a:hover {
+	 color: #e3f2fd;
+}
+ .a:hover:before {
+	 top: 0;
+}
+ .a:before {
+	 content: '';
+	 background: #138ff2;
+	 height: 100%;
+	 width: 100%;
+	 position: absolute;
+	 top: -100%;
+	 left: 0;
+	 transition: 0.3s;
+	 z-index: -1;
+}
+
+ @media (max-width: 600px) {
+	 body {
+		 margin: 0 5vw;
+	}
+}
+ 
+</style>
+<div class="wrapper wrapper1 container-fluid">
+    <h1 class="fw-bolder text-warning">Payment Failed!!!</h1>
+    <p>It seems that you're lost in fullfilling payment. Let us help guide you out and get you back home.</p>
+    <div class="buttons buttons1"><a class="a" href="/cart">back</a><a class="a" href="/">home</a><br/><span>Help me out</span></div>
+  </div>
